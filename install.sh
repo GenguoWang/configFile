@@ -6,10 +6,10 @@ if [ $? -eq 0 ]
 then
     echo "z.sh exist in .bashrc"
 else
-    echo "add z.sh in .bashrc"
+    echo "add z.sh in .bashrc .profile"
     echo "source $path/z.sh" >> ~/.bashrc
+    echo "source $path/z.sh" >> ~/.profile
 fi
-source ~/.bashrc
-
 
 echo success
+echo "Please reload .bashrc or .profile"
