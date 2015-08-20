@@ -6,10 +6,12 @@ if [ $? -eq 0 ]
 then
     echo "z.sh exist in .bashrc"
 else
-    echo "add z.sh in .bashrc .profile"
+    echo "add z.sh in .bashrc"
     echo "source $path/z.sh" >> ~/.bashrc
-    echo "source $path/z.sh" >> ~/.profile
 fi
 
+touch ~/.bashrc
+touch ~/.profile
+ruby installBash.rb $HOME
 echo success
-echo "Please reload .bashrc or .profile"
+echo "Please reload .bashrc"
