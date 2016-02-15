@@ -114,5 +114,5 @@ if ! shopt -oq posix; then
   fi
 fi
 export EDITOR='vi'
-set -ixon
+stty -ixon
 #KingoEnd
