@@ -1,6 +1,7 @@
 #! /bin/bash
 path=`pwd`
 cp -p .tmux.conf ~/ 
+cp -p .ideavimrc ~/ 
 cat ~/.bashrc |grep -q -e 'source .*z\.sh'
 if [ $? -eq 0 ]
 then
