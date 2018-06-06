@@ -116,4 +116,5 @@ fi
 export EDITOR='vi'
 stty -ixon
 alias clip='xclip -selection c'
+alias n='notify-send done'
 #KingoEnd
